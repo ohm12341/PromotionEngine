@@ -8,3 +8,12 @@ C:\Users\vijayaa\source\repos\PE.Solution\Domain.UnitTests\obj\Debug\netcoreapp3
 C:\Users\vijayaa\source\repos\PE.Solution\Domain.UnitTests\obj\Debug\netcoreapp3.1\Domain.UnitTests.csproj.CoreCompileInputs.cache
 C:\Users\vijayaa\source\repos\PE.Solution\Domain.UnitTests\obj\Debug\netcoreapp3.1\Domain.UnitTests.dll
 C:\Users\vijayaa\source\repos\PE.Solution\Domain.UnitTests\obj\Debug\netcoreapp3.1\Domain.UnitTests.pdb
+C:\src\PromotionEngine\Domain.UnitTests\bin\Debug\netcoreapp3.1\Domain.UnitTests.deps.json
+C:\src\PromotionEngine\Domain.UnitTests\bin\Debug\netcoreapp3.1\Domain.UnitTests.dll
+C:\src\PromotionEngine\Domain.UnitTests\bin\Debug\netcoreapp3.1\Domain.UnitTests.pdb
+C:\src\PromotionEngine\Domain.UnitTests\obj\Debug\netcoreapp3.1\Domain.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\PromotionEngine\Domain.UnitTests\obj\Debug\netcoreapp3.1\Domain.UnitTests.AssemblyInfoInputs.cache
+C:\src\PromotionEngine\Domain.UnitTests\obj\Debug\netcoreapp3.1\Domain.UnitTests.AssemblyInfo.cs
+C:\src\PromotionEngine\Domain.UnitTests\obj\Debug\netcoreapp3.1\Domain.UnitTests.csproj.CoreCompileInputs.cache
+C:\src\PromotionEngine\Domain.UnitTests\obj\Debug\netcoreapp3.1\Domain.UnitTests.dll
+C:\src\PromotionEngine\Domain.UnitTests\obj\Debug\netcoreapp3.1\Domain.UnitTests.pdb

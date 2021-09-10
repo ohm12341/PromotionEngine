@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClassLibrary1
+namespace Infrastructure.Persistence
 {
     public class Class1
     {

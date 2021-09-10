@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Infrastructure/1.0.0": {
+      "Infrastructure.Persistence/1.0.0": {
         "runtime": {
-          "Infrastructure.dll": {}
+          "Infrastructure.Persistence.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Infrastructure/1.0.0": {
+    "Infrastructure.Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

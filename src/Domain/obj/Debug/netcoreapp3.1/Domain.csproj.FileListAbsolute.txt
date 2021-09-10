@@ -8,3 +8,13 @@ C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\obj\Debug\netcoreapp3.1\Dom
 C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
 C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\obj\Debug\netcoreapp3.1\PE.Domain.dll
 C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\obj\Debug\netcoreapp3.1\PE.Domain.pdb
+C:\src\PromotionEngine\src\Domain\bin\Debug\netcoreapp3.1\PE.Domain.deps.json
+C:\src\PromotionEngine\src\Domain\bin\Debug\netcoreapp3.1\PE.Domain.dll
+C:\src\PromotionEngine\src\Domain\bin\Debug\netcoreapp3.1\PE.Domain.pdb
+C:\src\PromotionEngine\src\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.AssemblyReference.cache
+C:\src\PromotionEngine\src\Domain\obj\Debug\netcoreapp3.1\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\PromotionEngine\src\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+C:\src\PromotionEngine\src\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+C:\src\PromotionEngine\src\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+C:\src\PromotionEngine\src\Domain\obj\Debug\netcoreapp3.1\PE.Domain.dll
+C:\src\PromotionEngine\src\Domain\obj\Debug\netcoreapp3.1\PE.Domain.pdb

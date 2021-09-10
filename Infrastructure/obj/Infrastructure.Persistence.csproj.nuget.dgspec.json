@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\PromotionEngine\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\src\\PromotionEngine\\Infrastructure\\Infrastructure.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\src\\PromotionEngine\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\src\\PromotionEngine\\Infrastructure\\Infrastructure.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\PromotionEngine\\Infrastructure\\Infrastructure.csproj",
-        "projectName": "Infrastructure",
-        "projectPath": "C:\\src\\PromotionEngine\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\src\\PromotionEngine\\Infrastructure\\Infrastructure.Persistence.csproj",
+        "projectName": "Infrastructure.Persistence",
+        "projectPath": "C:\\src\\PromotionEngine\\Infrastructure\\Infrastructure.Persistence.csproj",
         "packagesPath": "C:\\Users\\vijayaa\\.nuget\\packages\\",
         "outputPath": "C:\\src\\PromotionEngine\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",

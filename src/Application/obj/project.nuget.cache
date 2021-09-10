@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VoZPVIrMHXGwNVIKdQy26atWHxUDrAmKD4pobJ73KEOTt3dzmTaeCamb5nnPWIGCS16otc6Nb5qs3CvrftgbEQ==",
+  "dgSpecHash": "YvXt6diMBQKzzWDp0eOOJ3Bir+Rtpwe01KY7hpoAJWiWnTo0ZK+2bToWgx9BnhkNgpnNkMTd8JFkkU04kD29CQ==",
   "success": true,
-  "projectFilePath": "C:\\src\\PromotionEngine\\src\\ClassLibrary1\\Application.csproj",
+  "projectFilePath": "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

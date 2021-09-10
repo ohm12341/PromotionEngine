@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\PromotionEngine\\src\\ClassLibrary1\\Application.csproj": {}
+    "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\src\\PromotionEngine\\src\\ClassLibrary1\\Application.csproj": {
+    "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\PromotionEngine\\src\\ClassLibrary1\\Application.csproj",
+        "projectUniqueName": "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj",
         "projectName": "PE.Application",
-        "projectPath": "C:\\src\\PromotionEngine\\src\\ClassLibrary1\\Application.csproj",
+        "projectPath": "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\vijayaa\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\PromotionEngine\\src\\ClassLibrary1\\obj\\",
+        "outputPath": "C:\\src\\PromotionEngine\\src\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
