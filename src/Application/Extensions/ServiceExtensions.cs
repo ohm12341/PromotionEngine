@@ -5,7 +5,7 @@ using AutoMapper;
 using PE.Application.Interfaces;
 using PE.Application.Behaviour;
 
-namespace PE.Application.Exceptions
+namespace PE.Application.Extensions
 {
     public static class ServiceExtensions
     {

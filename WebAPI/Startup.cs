@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PE.Application.Exceptions;
+using PE.Application.Extensions;
 using WebAPI.Extensions;
 
 namespace WebAPI

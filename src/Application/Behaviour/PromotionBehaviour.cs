@@ -1,9 +1,8 @@
 ﻿using PE.Application.Interfaces;
-using PE.Domain.BoundedContext.Product.Entities;
 using PE.Domain.Promotions.Entities;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
-using System;
 
 namespace PE.Application.Behaviour
 {
@@ -11,12 +10,12 @@ namespace PE.Application.Behaviour
     {
 
         private readonly ICartRepositoryAsync cartRepository;
-        private readonly IGenericRepositoryAsync<Product> productRepositoryAsync;
-        private readonly IGenericRepositoryAsync<Promotion> promotionRepositoryAsync;
+        private readonly IProductRepositoryAsync productRepositoryAsync;
+        private readonly IPromotionRepositoryAsync promotionRepositoryAsync;
         private readonly IGenericRepositoryAsync<PromotionSkuCount> promotionSkuCountRepositoryAsync;
         public PromotionBehaviour(ICartRepositoryAsync cartRepository,
-            IGenericRepositoryAsync<Product> productRepositoryAsync,
-            IGenericRepositoryAsync<Promotion> promotionRepositoryAsync,
+            IProductRepositoryAsync productRepositoryAsync,
+            IPromotionRepositoryAsync promotionRepositoryAsync,
             IGenericRepositoryAsync<PromotionSkuCount> promotionSkuCountRepositoryAsync)
         {
             this.cartRepository = cartRepository;
@@ -29,27 +28,61 @@ namespace PE.Application.Behaviour
         {
             try
             {
-                decimal totalPrice=0;
+                bool promotionapplied=false;
+                decimal totalPrice = 0;
 
                 var cart = await cartRepository.GetCartAllWithAllRelatedProperties(cartId);
-                
-                foreach (var product in cart.Products)
+
+                foreach (var cartProductCount in cart.CartProductCount)
                 {
+                    var product = await productRepositoryAsync.GetProductAllWithAllRelatedProperties(cartProductCount.productId);
+
                     foreach (var promotionSkuCount in product.PromotionSkuCounts)
                     {
-                        var promotion = await promotionRepositoryAsync.GetByIdAsync(promotionSkuCount.PromotionId);
+                        var promotion = await promotionRepositoryAsync.GetPromotionsAllWithAllRelatedProperties(promotionSkuCount.PromotionId);
 
                         if (promotion.PromotionType == Domain.Promotions.Enums.PromotionType.AssignedToSingleSkus)
                         {
                             int numberofPromotedProduct;
                             int numberofNonPromotedProduct;
-                           
-                            numberofPromotedProduct= Math.DivRem(cart.CartProductCount.FirstOrDefault(x => x.productId == product.Id).Count, promotion.MinimumPromotionedQuantity, out numberofNonPromotedProduct);
+
+                            numberofPromotedProduct = Math.DivRem(cartProductCount.Count, promotion.MinimumPromotionedQuantity, out numberofNonPromotedProduct);
 
                             totalPrice += numberofPromotedProduct * promotion.PromotionAmount;
                             totalPrice += numberofNonPromotedProduct * product.Price;
 
                         }
+                        else if (promotion.PromotionType == Domain.Promotions.Enums.PromotionType.AssignedToMultipleSkus)
+                        {
+                            int numberofPromotedProduct;
+                            int numberofNonPromotedProduct=1;
+                            bool canapplyPromotion = false;
+                           
+                            foreach (var promotionproduct in promotion.PromotionSkuCounts)
+                            {
+                                if (cart.CartProductCount.Any(x => x.productId == promotionproduct.productId) && cart.CartProductCount.Any(x=>x.Count==promotionproduct.Count))
+                                {
+                                    canapplyPromotion = true;
+                                    continue;
+                                }
+                                else
+                                {
+                                    canapplyPromotion = false;
+                                    break;
+                                }
+                            }
+
+                            if (canapplyPromotion&&!promotionapplied)
+                            {
+                                totalPrice += promotion.PromotionAmount;
+                                promotionapplied = true;
+                                break;
+                            }
+                            totalPrice += numberofNonPromotedProduct * product.Price;
+
+                        }
+                       
+
                     }
                 }
                 return totalPrice;

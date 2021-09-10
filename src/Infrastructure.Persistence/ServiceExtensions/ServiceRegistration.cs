@@ -29,7 +29,8 @@ namespace Infrastructure.Persistence.ServiceExtensions
             #region Repositories
             services.AddTransient(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));
             services.AddTransient<ICartRepositoryAsync,CartRepositoryAsync>();
-
+            services.AddTransient<IProductRepositoryAsync, ProductRepositoryAsync>();
+            services.AddTransient<IPromotionRepositoryAsync, PromotionRepositoryAsync>();
             #endregion
         }
     }

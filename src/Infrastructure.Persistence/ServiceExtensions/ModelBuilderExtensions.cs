@@ -54,8 +54,8 @@ namespace Infrastructure.Persistence.ServiceExtensions
                         LastModified = System.DateTime.Now,
                         LastModifiedBy = "TestUser",
                         SKU = "A",
-                        Price = 50,
-                        CartID = 1
+                        Price = 50
+                       
 
                     };
                     var product2 = new Product()
@@ -67,7 +67,7 @@ namespace Infrastructure.Persistence.ServiceExtensions
                         LastModifiedBy = "TestUser",
                         SKU = "B",
                         Price = 30,
-                        CartID = 1
+
                     };
                     var product3 = new Product()
                     {
@@ -78,7 +78,7 @@ namespace Infrastructure.Persistence.ServiceExtensions
                         LastModifiedBy = "TestUser",
                         SKU = "C",
                         Price = 20,
-                        CartID = 1
+                       
 
                     };
                     var product4 = new Product()
@@ -90,7 +90,7 @@ namespace Infrastructure.Persistence.ServiceExtensions
                         LastModifiedBy = "TestUser",
                         SKU = "D",
                         Price = 15,
-                        CartID = 1
+                      
 
                     };
 
@@ -115,6 +115,14 @@ namespace Infrastructure.Persistence.ServiceExtensions
                         productId = 3,
                         CartId = 1
                     };
+
+                    var cartSkucountScenario2_1 = new CartProductCount()
+                    {
+                        Id = 4,
+                        Count = 5,
+                        productId = 1,
+                        CartId = 2
+                    };
                     var cartSkucountScenario2_2 = new CartProductCount()
                     {
                         Id = 5,
@@ -122,13 +130,44 @@ namespace Infrastructure.Persistence.ServiceExtensions
                         productId = 2,
                         CartId = 2
                     };
-                    var cartSkucountScenario3_3 = new CartProductCount()
+                    var cartSkucountScenario2_3 = new CartProductCount()
                     {
                         Id = 6,
                         Count = 1,
                         productId = 3,
                         CartId = 2
                     };
+
+
+                    var cartSkucountScenario3_1 = new CartProductCount()
+                    {
+                        Id = 7,
+                        Count = 3,
+                        productId = 1,
+                        CartId = 3
+                    };
+                    var cartSkucountScenario3_2 = new CartProductCount()
+                    {
+                        Id = 8,
+                        Count = 5,
+                        productId = 2,
+                        CartId = 3
+                    };
+                    var cartSkucountScenario3_3 = new CartProductCount()
+                    {
+                        Id = 9,
+                        Count = 1,
+                        productId = 3,
+                        CartId = 3
+                    };
+                    var cartSkucountScenario3_4 = new CartProductCount()
+                    {
+                        Id = 10,
+                        Count = 1,
+                        productId = 4,
+                        CartId = 3
+                    };
+
 
 
                     var promotionSkucount1 = new PromotionSkuCount()
@@ -196,7 +235,7 @@ namespace Infrastructure.Persistence.ServiceExtensions
                         IsCumulative = false,
                         StartDate = System.DateTime.Now,
                         EndDate = System.DateTime.Now.AddDays(40),
-                        MinimumPromotionedQuantity = 3,
+                        MinimumPromotionedQuantity = 2,
                         Name = "2's of X for Y amount",
                       
                     };
@@ -207,7 +246,7 @@ namespace Infrastructure.Persistence.ServiceExtensions
                         CreatedBy = "TestUser",
                         LastModified = System.DateTime.Now,
                         LastModifiedBy = "TestUser",
-                        PromotionAmount = 45,
+                        PromotionAmount = 30,
                         PromotionTypeId=2,
                         PromotionType = PromotionType.AssignedToMultipleSkus,
                         IsCumulative = false,
@@ -229,9 +268,16 @@ namespace Infrastructure.Persistence.ServiceExtensions
                     context.Add(cartSkucountScenario1_2);
                     context.Add(cartSkucountScenario1_3);
 
+
                     context.Add(cartSkucountScenario2_1);
                     context.Add(cartSkucountScenario2_2);
+                    context.Add(cartSkucountScenario2_3);
+
+
+                    context.Add(cartSkucountScenario3_1);
+                    context.Add(cartSkucountScenario3_2);
                     context.Add(cartSkucountScenario3_3);
+                    context.Add(cartSkucountScenario3_4);
 
                     context.Add(product1);
                     context.Add(product2);
