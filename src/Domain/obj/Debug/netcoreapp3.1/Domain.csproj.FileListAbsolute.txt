@@ -1,0 +1,10 @@
+C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\bin\Debug\netcoreapp3.1\PE.Domain.deps.json
+C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\bin\Debug\netcoreapp3.1\PE.Domain.dll
+C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\bin\Debug\netcoreapp3.1\PE.Domain.pdb
+C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.AssemblyReference.cache
+C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\obj\Debug\netcoreapp3.1\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\obj\Debug\netcoreapp3.1\PE.Domain.dll
+C:\Users\vijayaa\source\repos\PE.Solution\src\Domain\obj\Debug\netcoreapp3.1\PE.Domain.pdb

@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Application.Intefration.Tests
+build_property.ProjectDir = C:\src\PromotionEngine\PE.Solution\

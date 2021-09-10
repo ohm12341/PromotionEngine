@@ -1,0 +1,10 @@
+C:\Users\vijayaa\source\repos\PE.Solution\PE.Solution\bin\Debug\netcoreapp3.1\Application.Intefration.Tests.deps.json
+C:\Users\vijayaa\source\repos\PE.Solution\PE.Solution\bin\Debug\netcoreapp3.1\Application.Intefration.Tests.dll
+C:\Users\vijayaa\source\repos\PE.Solution\PE.Solution\bin\Debug\netcoreapp3.1\Application.Intefration.Tests.pdb
+C:\Users\vijayaa\source\repos\PE.Solution\PE.Solution\obj\Debug\netcoreapp3.1\Application.Intefration.Tests.csproj.AssemblyReference.cache
+C:\Users\vijayaa\source\repos\PE.Solution\PE.Solution\obj\Debug\netcoreapp3.1\Application.Intefration.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vijayaa\source\repos\PE.Solution\PE.Solution\obj\Debug\netcoreapp3.1\Application.Intefration.Tests.AssemblyInfoInputs.cache
+C:\Users\vijayaa\source\repos\PE.Solution\PE.Solution\obj\Debug\netcoreapp3.1\Application.Intefration.Tests.AssemblyInfo.cs
+C:\Users\vijayaa\source\repos\PE.Solution\PE.Solution\obj\Debug\netcoreapp3.1\Application.Intefration.Tests.csproj.CoreCompileInputs.cache
+C:\Users\vijayaa\source\repos\PE.Solution\PE.Solution\obj\Debug\netcoreapp3.1\Application.Intefration.Tests.dll
+C:\Users\vijayaa\source\repos\PE.Solution\PE.Solution\obj\Debug\netcoreapp3.1\Application.Intefration.Tests.pdb

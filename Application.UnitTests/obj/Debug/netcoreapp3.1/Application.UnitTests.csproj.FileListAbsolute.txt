@@ -1,0 +1,10 @@
+C:\Users\vijayaa\source\repos\PE.Solution\Application.UnitTests\bin\Debug\netcoreapp3.1\Application.UnitTests.deps.json
+C:\Users\vijayaa\source\repos\PE.Solution\Application.UnitTests\bin\Debug\netcoreapp3.1\Application.UnitTests.dll
+C:\Users\vijayaa\source\repos\PE.Solution\Application.UnitTests\bin\Debug\netcoreapp3.1\Application.UnitTests.pdb
+C:\Users\vijayaa\source\repos\PE.Solution\Application.UnitTests\obj\Debug\netcoreapp3.1\Application.UnitTests.csproj.AssemblyReference.cache
+C:\Users\vijayaa\source\repos\PE.Solution\Application.UnitTests\obj\Debug\netcoreapp3.1\Application.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vijayaa\source\repos\PE.Solution\Application.UnitTests\obj\Debug\netcoreapp3.1\Application.UnitTests.AssemblyInfoInputs.cache
+C:\Users\vijayaa\source\repos\PE.Solution\Application.UnitTests\obj\Debug\netcoreapp3.1\Application.UnitTests.AssemblyInfo.cs
+C:\Users\vijayaa\source\repos\PE.Solution\Application.UnitTests\obj\Debug\netcoreapp3.1\Application.UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\vijayaa\source\repos\PE.Solution\Application.UnitTests\obj\Debug\netcoreapp3.1\Application.UnitTests.dll
+C:\Users\vijayaa\source\repos\PE.Solution\Application.UnitTests\obj\Debug\netcoreapp3.1\Application.UnitTests.pdb
