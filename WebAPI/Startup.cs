@@ -3,17 +3,11 @@ using Infrastructure.Persistence.ServiceExtensions;
 using Infrastructure.Shared.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using PE.Application.Exceptions;
 using WebAPI.Extensions;
 
 namespace WebAPI
@@ -32,6 +26,8 @@ namespace WebAPI
         {
             services.AddDbContext<PromotionDbContext>(options =>
                 options.UseInMemoryDatabase("PromotionDb"));
+
+            services.AddApplicationLayer();
             services.AddPersistenceInfrastructure(Configuration);
             services.AddSharedInfrastructure(Configuration);
             services.AddSwaggerExtension();
@@ -40,7 +36,7 @@ namespace WebAPI
 );
             services.AddApiVersioningExtension();
             services.AddHealthChecks();
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

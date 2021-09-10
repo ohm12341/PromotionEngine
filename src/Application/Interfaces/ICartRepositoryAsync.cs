@@ -6,6 +6,6 @@ namespace PE.Application.Interfaces
 {
     public interface ICartRepositoryAsync
     {
-        public Task<IEnumerable<PE.Domain.Cart.Entities.Cart>> GetCartAllWithAllRelatedProperties();
+        public Task<PE.Domain.Cart.Entities.Cart> GetCartAllWithAllRelatedProperties(int Id);
     }
 }

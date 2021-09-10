@@ -16,9 +16,9 @@ namespace Infrastructure.Persistence.Repositories
         {
             _carts = dbContext.Set<Cart>();
         }
-        public async Task<IEnumerable<Cart>> GetCartAllWithAllRelatedProperties()
+        public async Task<Cart> GetCartAllWithAllRelatedProperties(int Id)
         {
-            return await _carts.Include(x => x.Products).ThenInclude(x => x.Promotions).ThenInclude(x => x.PromotionSkuCounts).ToListAsync();
+            return await _carts.FindAsync(Id);
         }
     }
 }
