@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\PromotionEngine\\Infrastructure.UnitTest\\Infrastructure.UnitTest.csproj": {}
+    "C:\\src\\PromotionEngine\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\src\\PromotionEngine\\Infrastructure.UnitTest\\Infrastructure.UnitTest.csproj": {
+    "C:\\src\\PromotionEngine\\Infrastructure.Shared\\Infrastructure.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\PromotionEngine\\Infrastructure.UnitTest\\Infrastructure.UnitTest.csproj",
-        "projectName": "Infrastructure.UnitTest",
-        "projectPath": "C:\\src\\PromotionEngine\\Infrastructure.UnitTest\\Infrastructure.UnitTest.csproj",
+        "projectUniqueName": "C:\\src\\PromotionEngine\\Infrastructure.Shared\\Infrastructure.Shared.csproj",
+        "projectName": "Infrastructure.Shared",
+        "projectPath": "C:\\src\\PromotionEngine\\Infrastructure.Shared\\Infrastructure.Shared.csproj",
         "packagesPath": "C:\\Users\\vijayaa\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\PromotionEngine\\Infrastructure.UnitTest\\obj\\",
+        "outputPath": "C:\\src\\PromotionEngine\\Infrastructure.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -40,12 +40,6 @@
               },
               "C:\\src\\PromotionEngine\\src\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\src\\PromotionEngine\\src\\Domain\\Domain.csproj"
-              },
-              "C:\\src\\PromotionEngine\\src\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj": {
-                "projectPath": "C:\\src\\PromotionEngine\\src\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj"
-              },
-              "C:\\src\\PromotionEngine\\src\\Infrastructure.Shared\\Infrastructure.Shared.csproj": {
-                "projectPath": "C:\\src\\PromotionEngine\\src\\Infrastructure.Shared\\Infrastructure.Shared.csproj"
               }
             }
           }
@@ -60,41 +54,13 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[5.0.0, )"
             },
-            "Microsoft.NET.Test.Sdk": {
+            "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[16.9.4, )"
-            },
-            "MockQueryable.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "MockQueryable.Moq": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "Moq": {
-              "target": "Package",
-              "version": "[4.16.1, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.2, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.3, )"
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -358,14 +324,14 @@
         }
       }
     },
-    "C:\\src\\PromotionEngine\\src\\Infrastructure.Shared\\Infrastructure.Shared.csproj": {
+    "C:\\src\\PromotionEngine\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\PromotionEngine\\src\\Infrastructure.Shared\\Infrastructure.Shared.csproj",
-        "projectName": "Infrastructure.Shared",
-        "projectPath": "C:\\src\\PromotionEngine\\src\\Infrastructure.Shared\\Infrastructure.Shared.csproj",
+        "projectUniqueName": "C:\\src\\PromotionEngine\\WebAPI\\WebAPI.csproj",
+        "projectName": "WebAPI",
+        "projectPath": "C:\\src\\PromotionEngine\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\vijayaa\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\PromotionEngine\\src\\Infrastructure.Shared\\obj\\",
+        "outputPath": "C:\\src\\PromotionEngine\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -389,11 +355,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "C:\\src\\PromotionEngine\\Infrastructure.Shared\\Infrastructure.Shared.csproj": {
+                "projectPath": "C:\\src\\PromotionEngine\\Infrastructure.Shared\\Infrastructure.Shared.csproj"
+              },
               "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj": {
                 "projectPath": "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj"
               },
-              "C:\\src\\PromotionEngine\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\src\\PromotionEngine\\src\\Domain\\Domain.csproj"
+              "C:\\src\\PromotionEngine\\src\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj": {
+                "projectPath": "C:\\src\\PromotionEngine\\src\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj"
               }
             }
           }
@@ -408,13 +377,37 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.Extensions.Configuration": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.18, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
               "version": "[5.0.0, )"
             },
-            "Microsoft.Extensions.DependencyInjection": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.11.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.2.1, )"
             }
           },
           "imports": [
@@ -428,6 +421,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

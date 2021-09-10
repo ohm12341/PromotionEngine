@@ -6380,8 +6380,8 @@
     },
     "Infrastructure.Persistence/1.0.0": {
       "type": "project",
-      "path": "../Infrastructure.Persistence/Infrastructure.Persistence.csproj",
-      "msbuildProject": "../Infrastructure.Persistence/Infrastructure.Persistence.csproj"
+      "path": "../src/Infrastructure.Persistence/Infrastructure.Persistence.csproj",
+      "msbuildProject": "../src/Infrastructure.Persistence/Infrastructure.Persistence.csproj"
     },
     "Infrastructure.Shared/1.0.0": {
       "type": "project",
@@ -6390,13 +6390,13 @@
     },
     "PE.Application/1.0.0": {
       "type": "project",
-      "path": "../Application/Application.csproj",
-      "msbuildProject": "../Application/Application.csproj"
+      "path": "../src/Application/Application.csproj",
+      "msbuildProject": "../src/Application/Application.csproj"
     },
     "PE.Domain/1.0.0": {
       "type": "project",
-      "path": "../Domain/Domain.csproj",
-      "msbuildProject": "../Domain/Domain.csproj"
+      "path": "../src/Domain/Domain.csproj",
+      "msbuildProject": "../src/Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6423,11 +6423,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\src\\PromotionEngine\\src\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\src\\PromotionEngine\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\src\\PromotionEngine\\src\\WebAPI\\WebAPI.csproj",
+      "projectPath": "C:\\src\\PromotionEngine\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\vijayaa\\.nuget\\packages\\",
-      "outputPath": "C:\\src\\PromotionEngine\\src\\WebAPI\\obj\\",
+      "outputPath": "C:\\src\\PromotionEngine\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -6451,14 +6451,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\src\\PromotionEngine\\Infrastructure.Shared\\Infrastructure.Shared.csproj": {
+              "projectPath": "C:\\src\\PromotionEngine\\Infrastructure.Shared\\Infrastructure.Shared.csproj"
+            },
             "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj": {
               "projectPath": "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj"
             },
             "C:\\src\\PromotionEngine\\src\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj": {
               "projectPath": "C:\\src\\PromotionEngine\\src\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj"
-            },
-            "C:\\src\\PromotionEngine\\src\\Infrastructure.Shared\\Infrastructure.Shared.csproj": {
-              "projectPath": "C:\\src\\PromotionEngine\\src\\Infrastructure.Shared\\Infrastructure.Shared.csproj"
             }
           }
         }

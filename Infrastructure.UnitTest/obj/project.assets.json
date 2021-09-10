@@ -9188,8 +9188,8 @@
     },
     "Infrastructure.Shared/1.0.0": {
       "type": "project",
-      "path": "../Infrastructure.Shared/Infrastructure.Shared.csproj",
-      "msbuildProject": "../Infrastructure.Shared/Infrastructure.Shared.csproj"
+      "path": "../src/Infrastructure.Shared/Infrastructure.Shared.csproj",
+      "msbuildProject": "../src/Infrastructure.Shared/Infrastructure.Shared.csproj"
     },
     "PE.Application/1.0.0": {
       "type": "project",
@@ -9255,9 +9255,6 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\src\\PromotionEngine\\Infrastructure.Shared\\Infrastructure.Shared.csproj": {
-              "projectPath": "C:\\src\\PromotionEngine\\Infrastructure.Shared\\Infrastructure.Shared.csproj"
-            },
             "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj": {
               "projectPath": "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj"
             },
@@ -9266,6 +9263,9 @@
             },
             "C:\\src\\PromotionEngine\\src\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj": {
               "projectPath": "C:\\src\\PromotionEngine\\src\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj"
+            },
+            "C:\\src\\PromotionEngine\\src\\Infrastructure.Shared\\Infrastructure.Shared.csproj": {
+              "projectPath": "C:\\src\\PromotionEngine\\src\\Infrastructure.Shared\\Infrastructure.Shared.csproj"
             }
           }
         }

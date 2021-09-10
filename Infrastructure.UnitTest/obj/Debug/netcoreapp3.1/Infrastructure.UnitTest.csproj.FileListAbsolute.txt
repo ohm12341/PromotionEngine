@@ -173,3 +173,7 @@ C:\src\PromotionEngine\Infrastructure.UnitTest\obj\Debug\netcoreapp3.1\Infrastru
 C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\MockQueryable.Core.dll
 C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\MockQueryable.EntityFrameworkCore.dll
 C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\MockQueryable.Moq.dll
+C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
