@@ -32,7 +32,7 @@ namespace PE.Domain.Promotions.Entities
         public bool IsCumulative { get; set; }
 
 
-        public int? MinimumPromotionedQuantity { get; set; }
+        public int MinimumPromotionedQuantity { get; set; }
 
 
         public Product Product { get; set; }

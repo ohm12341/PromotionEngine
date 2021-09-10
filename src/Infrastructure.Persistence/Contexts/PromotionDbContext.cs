@@ -50,6 +50,8 @@ namespace Infrastructure.Persistence.Contexts
 
             builder.Entity<PromotionSkuCount>().HasOne(x => x.Promotion).WithMany(x => x.PromotionSkuCounts).HasForeignKey(x => x.PromotionId);
 
+            builder.Entity<CartProductCount>().HasOne(x => x.Cart).WithMany(x => x.CartProductCount).HasForeignKey(x => x.CartId);
+
 
             base.OnModelCreating(builder);
         }

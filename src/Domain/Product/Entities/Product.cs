@@ -15,5 +15,7 @@ namespace PE.Domain.BoundedContext.Product.Entities
         public Cart.Entities.Cart Cart { get; set; }
 
         public List<Promotion> Promotions { get; set; }
+
+        public List<PromotionSkuCount> PromotionSkuCounts { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using PE.Application.Interfaces;
 using PE.Domain.Cart.Entities;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Infrastructure.Persistence.Repositories
@@ -18,7 +19,8 @@ namespace Infrastructure.Persistence.Repositories
         }
         public async Task<Cart> GetCartAllWithAllRelatedProperties(int Id)
         {
-            return await _carts.FindAsync(Id);
+            
+            return (await _carts.Include(x=>x.CartProductCount).Include(x => x.Products).ThenInclude(x=>x.PromotionSkuCounts).ToListAsync()).FirstOrDefault(x => x.Id == Id);
         }
     }
 }

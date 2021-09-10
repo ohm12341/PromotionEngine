@@ -2,6 +2,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using AutoMapper;
+using PE.Application.Interfaces;
+using PE.Application.Behaviour;
 
 namespace PE.Application.Exceptions
 {
@@ -11,7 +13,7 @@ namespace PE.Application.Exceptions
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
-
+            services.AddTransient<IPromotionBehaviour, PromotionBehaviour>();
 
         }
     }

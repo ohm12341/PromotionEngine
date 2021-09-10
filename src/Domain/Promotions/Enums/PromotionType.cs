@@ -10,8 +10,8 @@ namespace PE.Domain.Promotions.Enums
     public enum PromotionType
     {
         
-        AssignedToSingleSkus = 2,
+        AssignedToSingleSkus = 1,
 
-        AssignedToMultipleSkus = 20
+        AssignedToMultipleSkus =2
     }
 }

@@ -104,14 +104,14 @@ namespace Infrastructure.UnitTest
             {
                 Id = 1,
                 Count = 3,
-                SKU = 1,
+                productId = 1,
                 PromotionId = 1
             };
             var promotionSkucount2 = new PromotionSkuCount()
             {
                 Id = 2,
                 Count = 2,
-                SKU = 2,
+                productId = 2,
                 PromotionId = 2
             };
 
@@ -119,7 +119,7 @@ namespace Infrastructure.UnitTest
             {
                 Id = 3,
                 Count = 1,
-                SKU = 3,
+                productId = 3,
                 PromotionId = 3
             };
 
@@ -128,7 +128,7 @@ namespace Infrastructure.UnitTest
             {
                 Id = 4,
                 Count = 1,
-                SKU = 4,
+                productId = 4,
                 PromotionId = 3
             };
 
