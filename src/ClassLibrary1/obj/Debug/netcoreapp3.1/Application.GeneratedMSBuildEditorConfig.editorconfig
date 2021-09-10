@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = PE.Application
+build_property.ProjectDir = C:\src\PromotionEngine\src\ClassLibrary1\
