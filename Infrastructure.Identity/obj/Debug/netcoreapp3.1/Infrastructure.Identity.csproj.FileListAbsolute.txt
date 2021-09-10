@@ -1,0 +1,10 @@
+C:\src\PromotionEngine\Infrastructure.Identity\bin\Debug\netcoreapp3.1\Infrastructure.Identity.deps.json
+C:\src\PromotionEngine\Infrastructure.Identity\bin\Debug\netcoreapp3.1\Infrastructure.Identity.dll
+C:\src\PromotionEngine\Infrastructure.Identity\bin\Debug\netcoreapp3.1\Infrastructure.Identity.pdb
+C:\src\PromotionEngine\Infrastructure.Identity\obj\Debug\netcoreapp3.1\Infrastructure.Identity.csproj.AssemblyReference.cache
+C:\src\PromotionEngine\Infrastructure.Identity\obj\Debug\netcoreapp3.1\Infrastructure.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\PromotionEngine\Infrastructure.Identity\obj\Debug\netcoreapp3.1\Infrastructure.Identity.AssemblyInfoInputs.cache
+C:\src\PromotionEngine\Infrastructure.Identity\obj\Debug\netcoreapp3.1\Infrastructure.Identity.AssemblyInfo.cs
+C:\src\PromotionEngine\Infrastructure.Identity\obj\Debug\netcoreapp3.1\Infrastructure.Identity.csproj.CoreCompileInputs.cache
+C:\src\PromotionEngine\Infrastructure.Identity\obj\Debug\netcoreapp3.1\Infrastructure.Identity.dll
+C:\src\PromotionEngine\Infrastructure.Identity\obj\Debug\netcoreapp3.1\Infrastructure.Identity.pdb

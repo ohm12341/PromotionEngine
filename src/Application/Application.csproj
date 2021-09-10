@@ -6,4 +6,8 @@
     <RootNamespace>PE.Application</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.3" />
+  </ItemGroup>
+
 </Project>

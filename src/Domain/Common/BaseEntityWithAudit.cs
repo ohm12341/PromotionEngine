@@ -2,7 +2,7 @@
 
 namespace PE.Domain.Common
 {
-    class BaseEntityWithAudit
+    public class BaseEntityWithAudit
     {
         public virtual int Id { get; set; }
         public string CreatedBy { get; set; }

@@ -11,7 +11,6 @@ C:\Users\vijayaa\source\repos\PE.Solution\Application.UnitTests\obj\Debug\netcor
 C:\src\PromotionEngine\Application.UnitTests\bin\Debug\netcoreapp3.1\Application.UnitTests.deps.json
 C:\src\PromotionEngine\Application.UnitTests\bin\Debug\netcoreapp3.1\Application.UnitTests.dll
 C:\src\PromotionEngine\Application.UnitTests\bin\Debug\netcoreapp3.1\Application.UnitTests.pdb
-C:\src\PromotionEngine\Application.UnitTests\obj\Debug\netcoreapp3.1\Application.UnitTests.csproj.AssemblyReference.cache
 C:\src\PromotionEngine\Application.UnitTests\obj\Debug\netcoreapp3.1\Application.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
 C:\src\PromotionEngine\Application.UnitTests\obj\Debug\netcoreapp3.1\Application.UnitTests.AssemblyInfoInputs.cache
 C:\src\PromotionEngine\Application.UnitTests\obj\Debug\netcoreapp3.1\Application.UnitTests.AssemblyInfo.cs
