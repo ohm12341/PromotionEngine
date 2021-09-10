@@ -77,7 +77,8 @@
       },
       "PE.Application/1.0.0": {
         "dependencies": {
-          "FluentValidation": "10.3.3"
+          "FluentValidation": "10.3.3",
+          "PE.Domain": "1.0.0"
         },
         "runtime": {
           "PE.Application.dll": {}

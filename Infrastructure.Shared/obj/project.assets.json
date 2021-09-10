@@ -70,7 +70,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "FluentValidation": "10.3.3"
+          "FluentValidation": "10.3.3",
+          "PE.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PE.Application.dll": {}

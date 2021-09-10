@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PE.Application.Interfaces;
-using PE.Domain.BoundedContext.Cart.Entities;
-using PE.Domain.BoundedContext.Order.Entities;
 using PE.Domain.BoundedContext.Product.Entities;
+using PE.Domain.Cart.Entities;
 using PE.Domain.Common;
-using System.Linq;
+using PE.Domain.Promotions.Entities;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -15,9 +14,11 @@ namespace Infrastructure.Persistence.Contexts
         public DbSet<Cart> Carts { get; set; }
         public DbSet<Product> Products { get; set; }
 
-        public DbSet<Order> Orders { get; set; }
+        public DbSet<Promotion> Promotions { get; set; }
 
-        private readonly IDateTimeService _dateTime;     
+        public DbSet<PromotionSkuCount> PromotionSkuCount { get; set; }
+
+        private readonly IDateTimeService _dateTime;
         public PromotionDbContext(DbContextOptions<PromotionDbContext> options, IDateTimeService dateTime) : base(options)
         {
             _dateTime = dateTime;
@@ -30,11 +31,11 @@ namespace Infrastructure.Persistence.Contexts
                 {
                     case EntityState.Added:
                         entry.Entity.Created = _dateTime.NowUtc;
-                      
+
                         break;
                     case EntityState.Modified:
                         entry.Entity.LastModified = _dateTime.NowUtc;
-                       
+
                         break;
                 }
             }
@@ -43,12 +44,13 @@ namespace Infrastructure.Persistence.Contexts
         protected override void OnModelCreating(ModelBuilder builder)
         {
             //All Decimals will have 18,6 Range
-            foreach (var property in builder.Model.GetEntityTypes()
-            .SelectMany(t => t.GetProperties())
-            .Where(p => p.ClrType == typeof(decimal) || p.ClrType == typeof(decimal?)))
-            {
-                property.SetColumnType("decimal(18,6)");
-            }
+            builder.Entity<Product>().HasOne(x => x.Cart).WithMany(x => x.Products).HasForeignKey(x => x.CartID);
+
+            builder.Entity<Promotion>().HasOne(x => x.Product).WithMany(x => x.Promotions).HasForeignKey(x => x.ProductId);
+
+            builder.Entity<PromotionSkuCount>().HasOne(x => x.Promotion).WithMany(x => x.PromotionSkuCounts).HasForeignKey(x => x.PromotionId);
+
+
             base.OnModelCreating(builder);
         }
     }

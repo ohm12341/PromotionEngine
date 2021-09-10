@@ -106,3 +106,6 @@ C:\src\PromotionEngine\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CopyComplete
 C:\src\PromotionEngine\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 C:\src\PromotionEngine\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 C:\src\PromotionEngine\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+C:\src\PromotionEngine\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\src\PromotionEngine\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\src\PromotionEngine\WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LwCAWWN55sFKwtJl9aYWna1gTF7GQDm/ZCKk4bkM7uQg+TgG+WESI13XIjI0XbtSHxqQ8zz2rzN4OiBMgGzOzg==",
+  "success": true,
+  "projectFilePath": "C:\\src\\PromotionEngine\\src\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vijayaa\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512"
+  ],
+  "logs": []
+}

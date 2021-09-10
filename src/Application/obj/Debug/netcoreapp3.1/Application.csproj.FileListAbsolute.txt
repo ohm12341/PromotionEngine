@@ -16,3 +16,7 @@ C:\src\PromotionEngine\src\Application\obj\Debug\netcoreapp3.1\Application.Assem
 C:\src\PromotionEngine\src\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
 C:\src\PromotionEngine\src\Application\obj\Debug\netcoreapp3.1\PE.Application.dll
 C:\src\PromotionEngine\src\Application\obj\Debug\netcoreapp3.1\PE.Application.pdb
+C:\src\PromotionEngine\src\Application\bin\Debug\netcoreapp3.1\PE.Domain.dll
+C:\src\PromotionEngine\src\Application\bin\Debug\netcoreapp3.1\PE.Domain.pdb
+C:\src\PromotionEngine\src\Application\obj\Debug\netcoreapp3.1\Application.csproj.AssemblyReference.cache
+C:\src\PromotionEngine\src\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete

@@ -35,7 +35,9 @@ namespace WebAPI
             services.AddPersistenceInfrastructure(Configuration);
             services.AddSharedInfrastructure(Configuration);
             services.AddSwaggerExtension();
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
             services.AddApiVersioningExtension();
             services.AddHealthChecks();
             
@@ -47,6 +49,7 @@ namespace WebAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.InitializeSeedData(development: true);
             }
             else
             {

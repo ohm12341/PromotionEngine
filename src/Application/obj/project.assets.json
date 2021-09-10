@@ -10,6 +10,16 @@
         "runtime": {
           "lib/netstandard2.1/FluentValidation.dll": {}
         }
+      },
+      "PE.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/PE.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PE.Domain.dll": {}
+        }
       }
     }
   },
@@ -31,11 +41,17 @@
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
       ]
+    },
+    "PE.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "FluentValidation >= 10.3.3"
+      "FluentValidation >= 10.3.3",
+      "PE.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -74,7 +90,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\src\\PromotionEngine\\src\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\src\\PromotionEngine\\src\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
