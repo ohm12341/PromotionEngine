@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using PE.Domain.Common;
 
 namespace PE.Domain.BoundedContext.Cart.Entities
 {
-    class Cart
+    public class Cart  : BaseEntity
     {
     }
 }

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using PE.Domain.Common;
 
 namespace PE.Domain.BoundedContext.Product.Entities
 {
-    class Product
+    public class Product   : BaseEntity
     {
     }
 }

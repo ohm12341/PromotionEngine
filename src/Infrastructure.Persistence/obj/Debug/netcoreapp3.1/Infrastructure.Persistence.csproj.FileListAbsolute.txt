@@ -8,3 +8,8 @@ C:\src\PromotionEngine\src\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\In
 C:\src\PromotionEngine\src\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.csproj.CoreCompileInputs.cache
 C:\src\PromotionEngine\src\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.dll
 C:\src\PromotionEngine\src\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.pdb
+C:\src\PromotionEngine\src\Infrastructure.Persistence\bin\Debug\netcoreapp3.1\PE.Application.dll
+C:\src\PromotionEngine\src\Infrastructure.Persistence\bin\Debug\netcoreapp3.1\PE.Domain.dll
+C:\src\PromotionEngine\src\Infrastructure.Persistence\bin\Debug\netcoreapp3.1\PE.Application.pdb
+C:\src\PromotionEngine\src\Infrastructure.Persistence\bin\Debug\netcoreapp3.1\PE.Domain.pdb
+C:\src\PromotionEngine\src\Infrastructure.Persistence\obj\Debug\netcoreapp3.1\Infrastructure.Persistence.csproj.CopyComplete
