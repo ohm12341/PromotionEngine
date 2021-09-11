@@ -79,6 +79,7 @@ I am using .net core 3.1 web api for this project. Also I have added swagger doc
 ###### Run Build
 ###### Select WebApi as start up project
 ###### Run project- this will open swagger UI
+![Image of Yaktocat](https://github.com/ohm12341/PromotionEngine/blob/main/Capture.PNG)
 ###### Click on /api/v{version}/Cart/{Id}/Promotions Get Method in swagger UI
 ###### Click Tryout
 
