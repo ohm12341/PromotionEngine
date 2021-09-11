@@ -66,11 +66,11 @@ This layer contains all the sahred concerns across the infra. This layer is to d
 
 This layer contains all the logic to connect to database  and all logic for CURD operations. I am using the generic repository pattern with the help fo EF core
 
-We have a generic repository with individual repository specific for entities . For debugging purpose we are using in memory database
+I have a generic repository with individual repository specific for entities . For debugging purpose I are using in memory database
 
 #### Web api
 
-I am using .net core 3.1 web api for this project. Also we have added swagger doc and ui for easy testing of the application.
+I am using .net core 3.1 web api for this project. Also I have added swagger doc and ui for easy testing of the application.
 
 ## How to run.
 
