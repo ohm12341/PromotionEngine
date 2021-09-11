@@ -89,5 +89,18 @@ I am using .net core 3.1 web api for this project. Also I have added swagger doc
 
 ###### Click Execute
 
+###### Under Response body "data" property shows the cart total
+Sample Response 
+```json
+{
+  "succeeded": true,
+  "message": "Success",
+  "errors": null,
+  "data": 100
+}
+```
 
+
+# Scenario Explanation 
+https://github.com/ohm12341/PromotionEngine/blob/main/Scenario%20%20explanation.docx
 
