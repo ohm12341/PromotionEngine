@@ -9,6 +9,6 @@ namespace PE.Domain.Promotions.Entities
 
         public int PromotionId { get; set; }
 
-        public Promotions.Entities.Promotion Promotion { get; set; }
+        public virtual Promotions.Entities.Promotion Promotion { get; set; }
     }
 }

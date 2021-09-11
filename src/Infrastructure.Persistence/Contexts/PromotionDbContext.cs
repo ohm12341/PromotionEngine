@@ -43,8 +43,11 @@ namespace Infrastructure.Persistence.Contexts
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            //All Decimals will have 18,6 Range
+            builder.Entity<Cart>().HasMany(x => x.Products).WithOne(x => x.Cart).HasForeignKey(x => x.CartID);
+
             builder.Entity<Product>().HasOne(x => x.Cart).WithMany(x => x.Products).HasForeignKey(x => x.CartID);
+
+            builder.Entity<Product>().HasMany(x => x.Promotions).WithOne(x => x.Product).HasForeignKey(x => x.ProductId);
 
             builder.Entity<Promotion>().HasOne(x => x.Product).WithMany(x => x.Promotions).HasForeignKey(x => x.ProductId);
 

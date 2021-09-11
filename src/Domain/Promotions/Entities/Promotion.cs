@@ -35,9 +35,9 @@ namespace PE.Domain.Promotions.Entities
         public int MinimumPromotionedQuantity { get; set; }
 
 
-        public Product Product { get; set; }
+        public virtual Product Product { get; set; }
 
-        public List<PromotionSkuCount> PromotionSkuCounts { get; set; }
+        public virtual ICollection<PromotionSkuCount> PromotionSkuCounts { get; set; }
 
         public PromotionType PromotionType
         {

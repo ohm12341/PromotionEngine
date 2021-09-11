@@ -6,8 +6,8 @@ namespace PE.Domain.Cart.Entities
 {
     public class Cart : BaseEntityWithAudit
     {
-        public List<Product> Products { get; set; }
-        public List<CartProductCount> CartProductCount { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<CartProductCount> CartProductCount { get; set; }
 
     }
 }

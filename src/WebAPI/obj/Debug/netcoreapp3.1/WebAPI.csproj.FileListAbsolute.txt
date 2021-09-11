@@ -207,3 +207,5 @@ C:\src\PromotionEngine\src\WebAPI\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebAP
 C:\src\PromotionEngine\src\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.RazorTargetAssemblyInfo.cache
 C:\src\PromotionEngine\src\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CopyComplete
 C:\src\PromotionEngine\src\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+C:\src\PromotionEngine\src\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\src\PromotionEngine\src\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll

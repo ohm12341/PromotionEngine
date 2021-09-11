@@ -12,10 +12,10 @@ namespace PE.Domain.BoundedContext.Product.Entities
 
         public int CartID { get; set; }
 
-        public Cart.Entities.Cart Cart { get; set; }
+        public virtual Cart.Entities.Cart Cart { get; set; }
 
-        public List<Promotion> Promotions { get; set; }
+        public virtual ICollection<Promotion> Promotions { get; set; }
 
-        public List<PromotionSkuCount> PromotionSkuCounts { get; set; }
+        public  virtual ICollection<PromotionSkuCount> PromotionSkuCounts { get; set; }
     }
 }

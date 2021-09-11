@@ -1,10 +1,9 @@
-﻿using PE.Application.DTOs;
-using System.Collections.Generic;
+﻿using PE.Domain.Cart.Entities;
 using System.Threading.Tasks;
 
 namespace PE.Application.Interfaces
 {
-    public interface ICartRepositoryAsync
+    public interface ICartRepositoryAsync : IGenericRepositoryAsync<Cart>
     {
         public Task<PE.Domain.Cart.Entities.Cart> GetCartAllWithAllRelatedProperties(int Id);
     }

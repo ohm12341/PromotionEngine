@@ -24,8 +24,12 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<PromotionDbContext>(options =>
-                options.UseInMemoryDatabase("PromotionDb"));
+            services.AddDbContext<PromotionDbContext>(options => {
+                options.UseLazyLoadingProxies();
+                options.UseInMemoryDatabase("PromotionDb");
+               
+
+                });
 
             services.AddApplicationLayer();
             services.AddPersistenceInfrastructure(Configuration);

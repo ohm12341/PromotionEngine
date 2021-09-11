@@ -19,7 +19,12 @@ namespace Infrastructure.Persistence.Repositories
         {
             _products = dbContext.Set<Product>();
         }
-      
+
+        public async Task<List<Product>> GetProductAllWithAllRelatedProperties()
+        {
+            return (await _products.Include(x => x.PromotionSkuCounts).Include(x=>x.Promotions).ToListAsync()).ToList();
+
+        }
 
         public async Task<Product> GetProductAllWithAllRelatedProperties(int Id)
         {

@@ -46,6 +46,7 @@ namespace Infrastructure.Persistence.ServiceExtensions
                         LastModifiedBy = "TestUser3",
 
                     };
+
                     var product1 = new Product()
                     {
                         Id = 1,
@@ -169,6 +170,36 @@ namespace Infrastructure.Persistence.ServiceExtensions
                     };
 
 
+                    var cartSkucountScenario4_1 = new CartProductCount()
+                    {
+                        Id = 11,
+                        Count = 3,
+                        productId = 1,
+                        CartId = 4
+                    };
+                    var cartSkucountScenario4_2 = new CartProductCount()
+                    {
+                        Id = 12,
+                        Count = 5,
+                        productId = 2,
+                        CartId = 4
+                    };
+                    var cartSkucountScenario4_3 = new CartProductCount()
+                    {
+                        Id = 13,
+                        Count = 3,
+                        productId = 3,
+                        CartId = 4
+                    };
+                    var cartSkucountScenario4_4 = new CartProductCount()
+                    {
+                        Id = 14,
+                        Count = 2,
+                        productId = 4,
+                        CartId = 4
+                    };
+
+
 
                     var promotionSkucount1 = new PromotionSkuCount()
                     {
@@ -200,6 +231,23 @@ namespace Infrastructure.Persistence.ServiceExtensions
                         Count = 1,
                         productId = 4,
                         PromotionId = 3
+                    };
+
+                    var promotionSkucount5 = new PromotionSkuCount()
+                    {
+                        Id = 5,
+                        Count = 2,
+                        productId = 3,
+                        PromotionId = 4
+                    };
+
+
+                    var promotionSkucount6 = new PromotionSkuCount()
+                    {
+                        Id = 6,
+                        Count = 1,
+                        productId = 4,
+                        PromotionId = 4
                     };
 
 
@@ -252,9 +300,29 @@ namespace Infrastructure.Persistence.ServiceExtensions
                         IsCumulative = false,
                         StartDate = System.DateTime.Now,
                         EndDate = System.DateTime.Now.AddDays(40),
-                        MinimumPromotionedQuantity = 3,
+                        MinimumPromotionedQuantity = 1,
                         Name = "X & Y for Z Amount",
                        
+                        PromotionSkuCounts = new List<PromotionSkuCount>()
+                        {
+                        }
+                    };
+                    var promotion4 = new Promotion()
+                    {
+                        Id = 4,
+                        Created = System.DateTime.Now,
+                        CreatedBy = "TestUser",
+                        LastModified = System.DateTime.Now,
+                        LastModifiedBy = "TestUser",
+                        PromotionAmount = 40,
+                        PromotionTypeId = 2,
+                        PromotionType = PromotionType.AssignedToMultipleSkus,
+                        IsCumulative = false,
+                        StartDate = System.DateTime.Now,
+                        EndDate = System.DateTime.Now.AddDays(40),
+                        MinimumPromotionedQuantity = 1,
+                        Name = "X & Y for Z Amount",
+
                         PromotionSkuCounts = new List<PromotionSkuCount>()
                         {
                         }
@@ -279,6 +347,12 @@ namespace Infrastructure.Persistence.ServiceExtensions
                     context.Add(cartSkucountScenario3_3);
                     context.Add(cartSkucountScenario3_4);
 
+
+                    context.Add(cartSkucountScenario4_1);
+                    context.Add(cartSkucountScenario4_2);
+                    context.Add(cartSkucountScenario4_3);
+                    context.Add(cartSkucountScenario4_4);
+
                     context.Add(product1);
                     context.Add(product2);
                     context.Add(product3);
@@ -288,10 +362,13 @@ namespace Infrastructure.Persistence.ServiceExtensions
                     context.Add(promotionSkucount2);
                     context.Add(promotionSkucount3);
                     context.Add(promotionSkucount4);
+                    context.Add(promotionSkucount5);
+                    context.Add(promotionSkucount6);
 
                     context.Add(promotion1);
                     context.Add(promotion2);
                     context.Add(promotion3);
+                    context.Add(promotion4);
 
                     context.SaveChanges();
                 }

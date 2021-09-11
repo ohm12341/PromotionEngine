@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Promotion\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 

@@ -12,6 +12,6 @@ namespace PE.Domain.Cart.Entities
 
         public int CartId { get; set; }
 
-        public Cart Cart { get; set; }
+        public virtual Cart Cart { get; set; }
     }
 }
