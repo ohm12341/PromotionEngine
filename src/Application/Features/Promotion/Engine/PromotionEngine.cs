@@ -15,6 +15,11 @@ namespace PE.Application.Features.Promotion.Engine
         {
             try
             {
+
+                if (cartProductCounts.Count == 0)
+                {
+                    return false;
+                }
                
                 bool canapplyPromotion = false;
 
@@ -45,6 +50,11 @@ namespace PE.Application.Features.Promotion.Engine
         {
             try
             {
+                if(cartproductCount==0 || minimumPromotionedQuantity ==0 )
+                {
+                    return 0;
+                }
+
                 decimal totalPrice = 0;
 
                 int numberofPromotedProduct;

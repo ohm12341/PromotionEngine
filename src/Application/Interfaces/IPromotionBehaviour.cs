@@ -2,7 +2,7 @@
 
 namespace PE.Application.Interfaces
 {
-    public interface IPromotionBehaviour
+    public interface ICartBehaviour
     {
         public Task<decimal> GetCartTotalAfterApplyingPromotions(int cartId);
     }

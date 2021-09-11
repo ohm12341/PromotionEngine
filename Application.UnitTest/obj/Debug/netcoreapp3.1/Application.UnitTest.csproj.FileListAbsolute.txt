@@ -96,3 +96,17 @@ C:\src\PromotionEngine\Application.UnitTest\obj\Debug\netcoreapp3.1\Application.
 C:\src\PromotionEngine\Application.UnitTest\obj\Debug\netcoreapp3.1\Application.UnitTest.dll
 C:\src\PromotionEngine\Application.UnitTest\obj\Debug\netcoreapp3.1\Application.UnitTest.pdb
 C:\src\PromotionEngine\Application.UnitTest\obj\Debug\netcoreapp3.1\Application.UnitTest.genruntimeconfig.cache
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\PE.Application.dll
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\PE.Domain.dll
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\PE.Application.pdb
+C:\src\PromotionEngine\Application.UnitTest\bin\Debug\netcoreapp3.1\PE.Domain.pdb

@@ -15,7 +15,7 @@ namespace PE.Application.Extensions
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
-            services.AddTransient<IPromotionBehaviour, CartBehaviour>();
+            services.AddTransient<ICartBehaviour, CartBehaviour>();
             services.AddTransient<IPromotionEngine, PromotionEngine>();
 
         }

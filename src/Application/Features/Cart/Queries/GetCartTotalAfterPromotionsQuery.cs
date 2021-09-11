@@ -14,16 +14,15 @@ namespace PE.Application.Features.Cart.Queries
     }
     public class GetCartWithPromotionsQueryHandler : IRequestHandler<GetCartTotalAfterPromotionsQuery, Response<decimal>>
     {
-        private readonly IPromotionBehaviour promotionBehaviour;
+        private readonly ICartBehaviour promotionBehaviour;
 
-        public GetCartWithPromotionsQueryHandler(IPromotionBehaviour promotionBehaviour)
+        public GetCartWithPromotionsQueryHandler(ICartBehaviour promotionBehaviour)
         {
             this.promotionBehaviour = promotionBehaviour;
         }
 
         public async Task<Response<decimal>> Handle(GetCartTotalAfterPromotionsQuery request, CancellationToken cancellationToken)
         {
-            // var validFilter = _mapper.Map<GetAllProductsParameter>(request);
 
             var totalprice = await promotionBehaviour.GetCartTotalAfterApplyingPromotions(request.CartId);
 

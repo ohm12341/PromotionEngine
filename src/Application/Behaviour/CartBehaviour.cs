@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PE.Application.Behaviour
 {
-    public class CartBehaviour : IPromotionBehaviour
+    public class CartBehaviour : ICartBehaviour
     {
 
         private readonly ICartRepositoryAsync cartRepository;

@@ -206,55 +206,7 @@ namespace Infrastructure.UnitTest
 
             };
             
-            
-
-            var product1 = new Product()
-            {
-                Id = 1,
-                Created = System.DateTime.Now,
-                CreatedBy = "TestUser",
-                LastModified = System.DateTime.Now,
-                LastModifiedBy = "TestUser",
-                SKU = "A",
-                Price = 50
-
-
-            };
-            var product2 = new Product()
-            {
-                Id = 2,
-                Created = System.DateTime.Now,
-                CreatedBy = "TestUser",
-                LastModified = System.DateTime.Now,
-                LastModifiedBy = "TestUser",
-                SKU = "B",
-                Price = 30,
-
-            };
-            var product3 = new Product()
-            {
-                Id = 3,
-                Created = System.DateTime.Now,
-                CreatedBy = "TestUser",
-                LastModified = System.DateTime.Now,
-                LastModifiedBy = "TestUser",
-                SKU = "C",
-                Price = 20,
-
-
-            };
-            var product4 = new Product()
-            {
-                Id = 4,
-                Created = System.DateTime.Now,
-                CreatedBy = "TestUser",
-                LastModified = System.DateTime.Now,
-                LastModifiedBy = "TestUser",
-                SKU = "D",
-                Price = 15,
-
-
-            };
+         
 
             var cartSkucountScenario1_1 = new CartProductCount()
             {
