@@ -177,3 +177,4 @@ C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\AutoMappe
 C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\MediatR.dll
 C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\src\PromotionEngine\Infrastructure.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll

@@ -26,7 +26,7 @@ namespace Infrastructure.Persistence.Repositories
 
         }
 
-        public async Task<Product> GetProductAllWithAllRelatedProperties(int Id)
+        public async Task<Product> GetProductWithAllRelatedProperties(int Id)
         {
             return (await _products.Include(x => x.PromotionSkuCounts).ToListAsync()).FirstOrDefault(x => x.Id == Id);
            

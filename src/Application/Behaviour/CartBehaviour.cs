@@ -38,7 +38,7 @@ namespace PE.Application.Behaviour
 
                 foreach (var cartProductCount in cart.CartProductCount)
                 {
-                    var product = await productRepositoryAsync.GetProductAllWithAllRelatedProperties(cartProductCount.productId);
+                    var product = await productRepositoryAsync.GetProductWithAllRelatedProperties(cartProductCount.productId);
 
                     foreach (var promotionSkuCount in product.PromotionSkuCounts)
                     {
@@ -47,6 +47,10 @@ namespace PE.Application.Behaviour
                         if (promotion.PromotionType == Domain.Promotions.Enums.PromotionType.AssignedToSingleSkus)
                         {
                             totalPrice += promotionEngine.GetAssignedToSingleSkusAmount(cartProductCount.Count, promotion.MinimumPromotionedQuantity, promotion.PromotionAmount, product.Price);
+                            if (promotion.UsePercentage)
+                            {
+                                totalPrice += (decimal)promotion.PromotionPercentage / 100 * product.Price;
+                            }
                         }
                         else if (promotion.PromotionType == Domain.Promotions.Enums.PromotionType.AssignedToMultipleSkus)
                         {

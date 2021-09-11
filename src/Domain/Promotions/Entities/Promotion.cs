@@ -18,6 +18,8 @@ namespace PE.Domain.Promotions.Entities
 
         public bool UsePercentage { get; set; }
 
+        public int PromotionPercentage { get; set; }
+
 
         public int ProductId { get; set; }
 

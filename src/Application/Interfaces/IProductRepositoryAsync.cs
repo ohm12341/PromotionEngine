@@ -7,7 +7,7 @@ namespace PE.Application.Interfaces
 {
     public interface IProductRepositoryAsync : IGenericRepositoryAsync<Product>
     {
-        public Task<Product> GetProductAllWithAllRelatedProperties(int Id);
+        public Task<Product> GetProductWithAllRelatedProperties(int Id);
 
         public Task<List<Product>> GetProductAllWithAllRelatedProperties();
     }
