@@ -32,9 +32,8 @@ namespace PE.Application.Behaviour
                 decimal totalPrice = 0;
 
                 var cart = await cartRepository.GetByIdAsync(cartId);
-
-                var allProducts = await productRepositoryAsync.GetProductAllWithAllRelatedProperties();
-
+                if (cart == null)
+                    return 0;
 
                 foreach (var cartProductCount in cart.CartProductCount)
                 {

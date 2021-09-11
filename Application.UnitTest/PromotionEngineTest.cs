@@ -234,20 +234,6 @@ namespace Application.UnitTest
                 PromotionSkuCounts = new List<PromotionSkuCount>() { promotionSkucount1, promotionSkucount2 }
 
             };
-            var cartSkucountScenario2_1 = new CartProductCount()
-            {
-                Id = 4,
-                Count = 2,
-                productId = 1,
-                CartId = 2
-            };
-            var cartSkucountScenario2_2 = new CartProductCount()
-            {
-                Id = 5,
-                Count = 2,
-                productId = 2,
-                CartId = 2
-            };
             var cartSkucount = new List<CartProductCount>();
 
             IPromotionEngine promotionEngine = new PromotionEngine();
