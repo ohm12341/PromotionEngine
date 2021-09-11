@@ -27,7 +27,7 @@ namespace PE.Application.Features.Cart.Queries
             var totalprice = await promotionBehaviour.GetCartTotalAfterApplyingPromotions(request.CartId);
 
 
-            return new Response<decimal>(decimal.Parse(totalprice.ToString()));
+            return new Response<decimal>(decimal.Parse(totalprice.ToString()), "Success");
         }
     }
 }
